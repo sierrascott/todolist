@@ -1,10 +1,12 @@
-
 .fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.fixed-top, .bottom {
   background-color: pink;
 }
 
@@ -31,23 +33,19 @@
   top: -60px;
 }
 
-.nav-link {
+.nav-link, .fa, .bottom, footer, #currentDay {
   color: #fff;
+}
+
+.nav-link:hover, .fa:hover, #counter {
+  color: peachpuff;
+}
+
+.nav-link, body {
+{
   font-family: "Montserrat", sans-serif;
-}
 
-.nav-link:hover {
-  color: peachpuff;
 }
-
-.fa {
-  color: #fff;
-}
-
-.fa:hover {
-  color: peachpuff;
-}
-
 
 #spoiler {
   display: none;
@@ -59,12 +57,7 @@
 
  body {
     text-align: center;
-    background-image: url("images/1.jpg");
-    font-family: "Montserrat", sans-serif;
-  }
-
-  .data {
-
+    background-image: url("images/1.JPG");
   }
 
   .box {
@@ -91,14 +84,9 @@
   }
 
   #currentDay {
-    color: #fff;
     background: peachpuff;
     border-radius: 10px;
     padding: 5%;
-  }
-
-  #counter {
-    color: peachpuff;
   }
 
   table {
@@ -129,8 +117,6 @@
   }
 
   .bottom {
-    background-color: pink;
-        color: #fff;
         margin: 15% 5% 10%;
         border-radius: 5px;
         padding: 5%;
@@ -139,7 +125,6 @@
 
   footer {
     margin: 5%;
-    color: #fff;
   }
 
   /*Mobile media query*/
