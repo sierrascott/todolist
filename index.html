@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Task Tackler</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <script src="https://kit.fontawesome.com/5924683564.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <!-- Nav Bar -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-template">
+    <div class="d-flex flex-row order-2 order-lg-3">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link px-2" href="https://www.linkedin.com/learning/doubling-your-productivity/keep-information-in-a-central-place?u=2045532" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/LollyDaskal" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="https://www.youtube.com/watch?v=dOWxLxVkTpw" target="_blank"><span class="fa fa-youtube"></span></a></li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Task Tackler</a></li>
+
+      </ul>
+  </nav>
+
+  <!-- Top -->
+  <br/>
+  <div class="container box">
+    <img class="list" src="images/pinkchecklist.jpg" alt="checkmark-img">
+    <h1 id="name"> </h1>
+    <h2 class="subtitle"> To Do List</h2>
+    <h3 id="currentDay"></h3>
+    <p id="counter"></p>
+
+    <!-- Add task -->
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+      <input type="text" id="add-name" placeholder="New task">
+      <input type="submit" value="+">
+    </form>
+
+    <!-- Tasks -->
+    <table>
+      <tr>
+      </tr>
+      <tbody id="tasks">
+      </tbody>
+    </table>
+
+    <!-- Edit task -->
+    <div id="spoiler" role="aria-hidden">
+      <form action="javascript:void(0);" method="POST" id="saveEdit">
+        <input type="text" id="edit-name">
+        <input type="submit" value="Edit" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+      </form>
+    </div>
+
+    <!-- Directions -->
+    <div class="bottom">
+      <h4 id="encouragement"> ... </h4>
+    </div>
+    <button class="tweetbtn" onClick="tweetQuote()"><span class="fa fa-twitter-square"> Tweet Quote</span></button>
+
+  </div>
+  <!-- <br/>
+  <div class="container box">
+    <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>Make list</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div> -->
+
+
+  </div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+<footer>
+  <h5 class="copyright">Made by Sierra Scott 2021</h5>
+</footer>
+
+</html>
