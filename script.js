@@ -1,6 +1,6 @@
 
 // Custom name
-let name = prompt("What's your name?");
+let name = prompt("What's your first name?");
 var firstLetter = name.slice(0, 1);
 cap = firstLetter.toUpperCase();
 restLetters = name.slice(1, name.length);
