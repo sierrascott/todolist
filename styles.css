@@ -31,24 +31,6 @@
   top: -60px;
 }
 
-.nav-link {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-.nav-link:hover {
-  color: peachpuff;
-}
-
-.fa {
-  color: #fff;
-}
-
-.fa:hover {
-  color: peachpuff;
-}
-
-
 #spoiler {
   display: none;
 }
@@ -60,11 +42,10 @@
  body {
     text-align: center;
     background-image: url("images/1.jpg");
-    font-family: "Montserrat", sans-serif;
   }
 
-  .data {
-
+  .nav-link, .fa, body {
+    font-family: "Montserrat", sans-serif;
   }
 
   .box {
@@ -91,13 +72,12 @@
   }
 
   #currentDay {
-    color: #fff;
     background: peachpuff;
     border-radius: 10px;
     padding: 5%;
   }
 
-  #counter {
+  .nav-link:hover, .fa:hover, #counter {
     color: peachpuff;
   }
 
@@ -118,7 +98,6 @@
     cursor: pointer;
     border-radius: 7px;
     background-color: lightpink;
-    color: #fff;
   }
 
   #edit-box{
@@ -128,9 +107,12 @@
     margin-top: 10px;
   }
 
+.nav-link, .fa, #currentDay, input[type='submit'], button, [aria-label], .bottom, footer {
+  color: #fff;
+}
+
   .bottom {
     background-color: pink;
-        color: #fff;
         margin: 15% 5% 10%;
         border-radius: 5px;
         padding: 5%;
@@ -139,7 +121,6 @@
 
   footer {
     margin: 5%;
-    color: #fff;
   }
 
   /*Mobile media query*/
